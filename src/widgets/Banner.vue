@@ -10,7 +10,11 @@ defineProps(["title", "text", "btnColor", "btnText"]);
         <p>{{ text }}</p>
       </div>
       <div class="right">
-        <Form :btnColor="btnColor" :btnText="btnText" />
+        <Form
+          :btnColor="btnColor"
+          :btnText="btnText"
+          text="Нажимая на кнопку, Вы соглашаетесь"
+        />
       </div>
     </div>
   </div>

@@ -19,15 +19,19 @@ const menu = useMenuStore();
         <div class="info">
           <div class="info-item">
             <p>Почта</p>
-            <a href="mailto:info@goroddes.ru">info@goroddes.ru</a>
+            <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
           </div>
           <div class="info-item">
-            <p>Выезд по Москве и +50км за МКАД</p>
-            <span>Москва, ул. Рабочая, 93</span>
+            <p>Выезд по Москве и МО (до ЦКАД)</p>
+            <span
+              >Москва, <br />
+              Большая Семёновская ул., <br />
+              д 40, стр. 13</span
+            >
           </div>
           <div class="info-item">
             <p>Ежедневно с 8:00 до 24:00</p>
-            <a href="tel:+7 (495) 183-22-95">+7 (495) 183-22-95</a>
+            <a href="tel:+7 (966) 888-06-52">+7 (966) 888-06-52</a>
           </div>
         </div>
         <div class="mob">
@@ -56,7 +60,6 @@ header {
   left: 0;
   top: 10px;
   z-index: 100;
-  width: 100vw;
   .header-inner {
     background: var(--light-color);
     border-radius: 100px;
@@ -65,10 +68,8 @@ header {
     padding: 10px 50px 12px 20px;
     justify-content: space-between;
     display: flex;
-    height: 62px;
     @media (max-width: $tab) {
       padding: 10px;
-      height: 50px;
     }
     .logo {
       width: 162px;

@@ -8,23 +8,23 @@ const menu = useMenuStore();
   <div class="mobile-menu" :class="menu.isActive ? 'active' : ''">
     <div class="mobile-menu-content">
       <nav>
-        <a href="#cost">Стоимость</a>
-        <a href="#advantages">О нас</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#footer">Контакты</a>
+        <a href="#cost" @click="menu.handleOpenMenu">Стоимость</a>
+        <a href="#advantages" @click="menu.handleOpenMenu">О нас</a>
+        <a href="#reviews" @click="menu.handleOpenMenu">Отзывы</a>
+        <a href="#footer" @click="menu.handleOpenMenu">Контакты</a>
       </nav>
       <ul>
         <li>
           <p>Почта:</p>
-          <a href="mailto:info@goroddes.ru">info@goroddes.ru</a>
+          <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
         </li>
         <li>
           <p>Выезд по Москве и +50км за МКАД</p>
-          <span>Москва, ул. Рабочая, 93</span>
+          <span>Москва, Большая Семёновская ул., д 40, стр. 13</span>
         </li>
         <li>
           <p>Ежедневно с 8:00 до 24:00</p>
-          <a href="tel:+7 (495) 183-22-95">+7 (495) 183-22-95</a>
+          <a href="tel:+7 (966) 888-06-52">+7 (966) 888-06-52</a>
         </li>
       </ul>
     </div>
@@ -33,6 +33,7 @@ const menu = useMenuStore();
 
 <style lang="scss" scoped>
 .mobile-menu.active {
+  pointer-events: all;
   .mobile-menu-content {
     transform: translateY(0);
   }

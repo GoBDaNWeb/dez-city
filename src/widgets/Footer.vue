@@ -6,15 +6,18 @@
         <ul>
           <li>
             <p>Адрес:</p>
-            <span>Москва, ул. Рабочая, 93</span>
+            <span
+              >Москва, <br />
+              Большая Семёновская ул., д 40, стр. 13</span
+            >
           </li>
           <li>
             <p>Позвоните нам:</p>
-            <a href="tel:+7 (495) 183-22-95">+7 (495) 183-22-95</a>
+            <a href="tel:+7 (966) 888-06-52">+7 (966) 888-06-52</a>
           </li>
           <li>
             <p>Напишите:</p>
-            <a href="mailto:info@goroddes.ru">info@goroddes.ru</a>
+            <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
           </li>
         </ul>
         <div class="info">
@@ -28,7 +31,7 @@
       <div class="footer-item">
         <div class="footer-about">
           <p>
-            ©2013–2023. Все права защищены. Данный сайт носит
+            ©2013–2024. Все права защищены. Данный сайт носит
             информационно-справочный характер и ни при каких условиях не
             является публичной офертой.
           </p>
@@ -192,6 +195,7 @@ footer {
           color: var(--white-color);
           margin-top: 25px;
           display: block;
+          text-decoration: underline;
           @media (max-width: $tab) {
             margin-top: 20px;
           }

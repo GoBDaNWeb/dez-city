@@ -13,14 +13,18 @@ import { Form } from "@/features";
           тараканов, клопов <br />
           и плесени
         </h1>
-        <p>Гарантия результата по договору на 2 года вперёд</p>
+        <p>Гарантия результата по договору <span>на 1 год</span> вперёд</p>
         <ul>
           <li>Выезжаем 24/7, при срочном заказе – в течение часа</li>
-          <li>Работаем до 30 км за МКАД</li>
+          <li>Работаем по Москве и МО (до ЦКАД)</li>
           <li>Используем безопасные, гипоаллергенные средства</li>
         </ul>
-        <h4><span>Решим вашу проблему за</span> один выезд</h4>
-        <Form btnColor="orange" btnText="Заказать обработку" />
+        <h4>Решим вашу проблему за один выезд</h4>
+        <Form
+          btnColor="orange"
+          btnText="Заказать обработку"
+          text="Нажимая на кнопку «Заказать обработку», вы соглашаетесь"
+        />
       </div>
       <div class="right">
         <div class="image-wrapper">
@@ -46,7 +50,7 @@ import { Form } from "@/features";
 @import "@/shared/styles/vars";
 
 .hero {
-  margin-top: 82px;
+  margin-top: 100px;
   .hero-inner {
     background-image: url("@/shared/images/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -97,6 +101,9 @@ import { Form } from "@/features";
           font-size: 20px;
           line-height: 24px;
         }
+        span {
+          color: var(--orange-color);
+        }
       }
       ul {
         display: flex;
@@ -137,13 +144,11 @@ import { Form } from "@/features";
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
-        color: var(--white-color);
+        color: var(--orange-color);
+
         @media (max-width: $tab) {
           font-size: 20px;
           line-height: 20px;
-        }
-        span {
-          color: var(--orange-color);
         }
       }
       form {

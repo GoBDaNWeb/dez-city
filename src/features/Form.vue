@@ -1,7 +1,7 @@
 <script setup>
 import { Button, Input } from "@/shared/ui";
 
-defineProps(["btnColor", "btnText"]);
+defineProps(["btnColor", "btnText", "text"]);
 </script>
 
 <template>
@@ -11,8 +11,9 @@ defineProps(["btnColor", "btnText"]);
       <Button :color="btnColor">{{ btnText }}</Button>
     </div>
     <p>
-      Нажимая на кнопку «Заказать обработку», вы соглашаетесь с политикой
-      конфиденциальности
+      {{ text }}
+
+      <a href="#">с политикой конфиденциальности</a>
     </p>
   </form>
 </template>
@@ -43,6 +44,11 @@ form {
     font-weight: 350;
     font-size: 12px;
     line-height: 12px;
+    color: var(--white-color);
+    a {
+      text-decoration: underline;
+      color: var(--white-color);
+    }
   }
 }
 </style>
