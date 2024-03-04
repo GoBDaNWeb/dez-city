@@ -1,0 +1,46 @@
+@import "./vars";
+
+.container {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  @media (max-width: $tab) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+body {
+  background: var(--gray-color);
+  font-family: "Cygre", sans-serif;
+}
+.ymaps-2-1-79-gotoymaps {
+  display: none !important;
+}
+.ymaps-2-1-79-gototech {
+  display: none !important;
+}
+.ymaps-2-1-79-copyright {
+  display: none !important;
+}
+.ymaps-2-1-79-gototaxi {
+  display: none !important;
+}
+.input:placeholder-shown {
+  text-transform: uppercase;
+}
+.input {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--text-color);
+  width: 100%;
+}
