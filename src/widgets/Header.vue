@@ -23,8 +23,7 @@ const menu = useMenuStore();
           </div>
           <div class="info-item">
             <p>Выезд по Москве и МО (до ЦКАД)</p>
-            <span
-              >Москва, <br />
+            <span>
               Большая Семёновская ул., <br />
               д 40, стр. 13</span
             >
@@ -100,7 +99,6 @@ header {
     }
     .info {
       display: flex;
-      align-items: center;
       gap: 30px;
       @media (max-width: $desktop-sm) {
         display: none;

@@ -62,8 +62,8 @@ const menu = useMenuStore();
       a {
         font-weight: 600;
         font-family: "Cygre ", sans-serif;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 18px;
       }
     }
     ul {
@@ -79,16 +79,16 @@ const menu = useMenuStore();
         p {
           font-family: "Cygre ", sans-serif;
           font-weight: 350;
-          font-size: 12px;
-          line-height: 12px;
+          font-size: 16px;
+          line-height: 16px;
           color: var(--dark-color);
         }
         span,
         a {
           font-family: "Cygre ", sans-serif;
           font-weight: 600;
-          font-size: 14px;
-          line-height: 14px;
+          font-size: 18px;
+          line-height: 18px;
           color: var(--orange-color);
         }
       }
