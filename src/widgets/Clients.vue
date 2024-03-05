@@ -7,7 +7,6 @@ import img4 from "@/shared/images/clients/4.jpg";
 import img5 from "@/shared/images/clients/5.jpg";
 import img6 from "@/shared/images/clients/6.jpg";
 import img7 from "@/shared/images/clients/7.jpg";
-import img8 from "@/shared/images/clients/8.jpg";
 const clientsList = [
   { id: 1, img: img1 },
   { id: 2, img: img2 },
@@ -16,7 +15,6 @@ const clientsList = [
   { id: 5, img: img5 },
   { id: 6, img: img6 },
   { id: 7, img: img7 },
-  { id: 8, img: img8 },
 ];
 </script>
 
@@ -31,7 +29,7 @@ const clientsList = [
           :img="client.img"
         />
         <ClientItem
-          v-for="client in clientsList.reverse()"
+          v-for="client in clientsList"
           :key="client.id"
           :img="client.img"
         />

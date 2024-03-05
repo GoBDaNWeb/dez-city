@@ -29,7 +29,7 @@ const menu = useMenuStore();
             >
           </div>
           <div class="info-item">
-            <p>Ежедневно с 8:00 до 24:00</p>
+            <p>Ежедневно с 8:00 до 22:00</p>
             <a href="tel:+7 (966) 888-06-52">+7 (966) 888-06-52</a>
           </div>
         </div>

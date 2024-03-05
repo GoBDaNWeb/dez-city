@@ -69,6 +69,8 @@ defineProps(["title", "text", "img"]);
     @media (max-width: $tab) {
       border-radius: 20px;
       margin-top: 10px;
+      width: auto;
+      height: auto;
     }
     img {
       width: 70%;
