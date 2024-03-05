@@ -30,44 +30,7 @@ const costItems = [
     ],
   },
   {
-    id: 2,
-    title: "Уничтожение плесени",
-    badges: ["Холодный туман"],
-    options: [
-      { title: "1-5 м²", cost: "от 400 ₽/ м²" },
-      { title: "5-10 м² ", cost: "от 350 руб./ м²" },
-      { title: "10-30 м²", cost: "от 250 руб./ м²" },
-      { title: "более 30 м²", cost: "договорная" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Уничтожение тараканов",
-    badges: ["Холодный туман", "Горячий туман"],
-    options: [
-      { title: "Общежитие / комната (до 20 м²)", cost: "от 1900 ₽" },
-      { title: "1-комнатная квартира (до 40 м²) ", cost: "от 2300 ₽" },
-      { title: "2-комнатная квартира (до 60 м²)", cost: "от 2600 ₽" },
-      { title: "3-комнатная квартира (до 90 м²)", cost: "от 3000 ₽" },
-      { title: "4 комнаты (более 90 м²)", cost: "от 3500 ₽" },
-      { title: "Частный дом", cost: "от 3100 ₽" },
-    ],
-  },
-  {
-    id: 5,
-    title: "Уничтожение  клопов",
-    badges: ["Холодный туман", "Горячий туман"],
-    options: [
-      { title: "Общежитие / комната (до 20 м²)", cost: "от 1900 ₽" },
-      { title: "1-комнатная квартира (до 40 м²) ", cost: "от 2300 ₽" },
-      { title: "2-комнатная квартира (до 60 м²)", cost: "от 2600 ₽" },
-      { title: "3-комнатная квартира (до 90 м²)", cost: "от 3000 ₽" },
-      { title: "4 комнаты (более 90 м²)", cost: "от 3500 ₽" },
-      { title: "Частный дом", cost: "от 3100 ₽" },
-    ],
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Уничтожение плесени",
     badges: ["Холодный туман"],
     options: [
@@ -84,7 +47,17 @@ const costItems = [
   <div id="cost" class="cost container">
     <div class="cost-inner">
       <h2><span>Стоимость</span> обработки помещений</h2>
-      <Swiper
+      <div class="cost-list">
+        <CostItem
+          v-for="item in costItems"
+          :key="item.id"
+          :title="item.title"
+          :badges="item.badges"
+          :options="item.options"
+        />
+      </div>
+
+      <!-- <Swiper
         :breakpoints="{
           0: { slidesPerView: 1 },
           767: { slidesPerView: 2 },
@@ -92,14 +65,8 @@ const costItems = [
         }"
         slidesPerView="3"
       >
-        <SwiperSlide v-for="item in costItems" :key="item.id">
-          <CostItem
-            :title="item.title"
-            :badges="item.badges"
-            :options="item.options"
-          />
-        </SwiperSlide>
-      </Swiper>
+        <SwiperSlide> </SwiperSlide>
+      </Swiper> -->
     </div>
   </div>
 </template>
@@ -129,6 +96,20 @@ const costItems = [
       }
       span {
         color: var(--orange-color);
+      }
+    }
+    .cost-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      @media (max-width: $desktop-sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: $tab) {
+        gap: 15px;
+      }
+      @media (max-width: $tab-sm) {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
