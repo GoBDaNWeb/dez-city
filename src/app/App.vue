@@ -31,11 +31,11 @@ import {
       btnText="получить скидку"
     />
     <About />
-    <Team />
+    <!-- <Team /> -->
     <Reviews />
     <Certificates />
     <Clients />
-    <Gallery />
+    <!-- <Gallery /> -->
 
     <Banner
       title="СКИДКА ДЛЯ ЮРИДИЧЕСКИХ <br/>ЛИЦ  20%"

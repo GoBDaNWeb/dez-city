@@ -2,27 +2,27 @@
 import { SwiperSlide } from "swiper/vue";
 import { Swiper, CertificateItem } from "@/entities";
 import Fancybox from "./Fancybox.vue";
-import img1 from "@/shared/images/certificates/1.jpg";
-import img2 from "@/shared/images/certificates/2.jpg";
+import img1 from "@/shared/images/certificates/1.jpeg";
+import img2 from "@/shared/images/certificates/2.jpeg";
 import img3 from "@/shared/images/certificates/3.jpg";
 import img4 from "@/shared/images/certificates/4.jpg";
+import img5 from "@/shared/images/certificates/5.png";
+import img6 from "@/shared/images/certificates/6.jpeg";
 
 const certificatesList = [
-  { id: 1, img: img1 },
-  { id: 2, img: img2 },
-  { id: 3, img: img3 },
-  { id: 4, img: img4 },
-  { id: 5, img: img1 },
-  { id: 6, img: img2 },
-  { id: 7, img: img3 },
-  { id: 8, img: img4 },
+  { id: 1, img: img3 },
+  { id: 2, img: img4 },
+  { id: 3, img: img1 },
+  { id: 4, img: img2 },
+  { id: 5, img: img5 },
+  { id: 6, img: img6 },
 ];
 </script>
 
 <template>
   <div class="certificates container">
     <div class="certificates-inner">
-      <h2>Сертификаты</h2>
+      <h2>Сертифицированные препараты и оборудование</h2>
       <Fancybox>
         <Swiper
           :breakpoints="{

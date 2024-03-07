@@ -5,22 +5,22 @@
       <div class="review-content">
         <div class="review-item">
           <div class="image-wrapper">
-            <img src="@/shared/images/reviews/1.jpg" alt="review" />
+            <img src="@/shared/images/reviews/1.png" alt="review" />
           </div>
         </div>
         <div class="review-item">
           <div class="image-wrapper">
-            <img src="@/shared/images/reviews/2.jpg" alt="review" />
+            <img src="@/shared/images/reviews/2.png" alt="review" />
           </div>
         </div>
         <div class="review-item">
           <div class="image-wrapper">
-            <img src="@/shared/images/reviews/3.jpg" alt="review" />
+            <img src="@/shared/images/reviews/3.png" alt="review" />
           </div>
         </div>
         <div class="review-item">
           <div class="image-wrapper">
-            <img src="@/shared/images/reviews/4.jpg" alt="review" />
+            <img src="@/shared/images/reviews/4.png" alt="review" />
           </div>
         </div>
       </div>
