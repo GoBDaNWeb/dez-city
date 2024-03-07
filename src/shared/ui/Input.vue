@@ -32,6 +32,7 @@
     }
   }
   input {
+    width: 100%;
     border: none;
     font-weight: 500;
     font-size: 16px;
