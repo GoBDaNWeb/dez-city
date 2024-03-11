@@ -1,6 +1,9 @@
 <script setup>
 import { Badge, Button } from "@/shared/ui";
+import { useModalStore } from "@/entities";
 defineProps(["title", "options", "badges"]);
+
+const modal = useModalStore();
 </script>
 
 <template>
@@ -16,7 +19,9 @@ defineProps(["title", "options", "badges"]);
         <span>{{ option.cost }}</span>
       </li>
     </ul>
-    <Button color="orange">Заказать услугу</Button>
+    <Button :click="modal.handleOpenModal" color="orange"
+      >Заказать услугу</Button
+    >
   </div>
 </template>
 

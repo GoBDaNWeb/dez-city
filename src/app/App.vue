@@ -14,6 +14,7 @@ import {
   Gallery,
   Footer,
   MobileMenu,
+  OrderModal,
 } from "@/widgets";
 </script>
 
@@ -46,6 +47,7 @@ import {
     <Footer />
   </main>
   <MobileMenu />
+  <OrderModal />
 </template>
 
 <style scoped></style>

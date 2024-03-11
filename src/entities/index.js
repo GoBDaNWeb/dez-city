@@ -7,6 +7,7 @@ import TeamItem from "./TeamItem.vue";
 import CertificateItem from "./CertificateItem.vue";
 import ClientItem from "./ClientItem.vue";
 import { useMenuStore } from "./MenuStore.js";
+import { useModalStore } from "./ModalStore.js";
 export {
   Swiper,
   CostItem,
@@ -17,4 +18,5 @@ export {
   CertificateItem,
   ClientItem,
   useMenuStore,
+  useModalStore,
 };

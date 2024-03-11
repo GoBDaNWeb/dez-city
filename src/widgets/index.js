@@ -13,6 +13,7 @@ import Clients from "./Clients.vue";
 import Gallery from "./Gallery.vue";
 import Footer from "./Footer.vue";
 import MobileMenu from "./MobileMenu.vue";
+import OrderModal from "./OrderModal.vue";
 
 export {
   Header,
@@ -30,4 +31,5 @@ export {
   Gallery,
   Footer,
   MobileMenu,
+  OrderModal,
 };

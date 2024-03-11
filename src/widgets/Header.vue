@@ -9,7 +9,11 @@ const menu = useMenuStore();
   <header>
     <div class="container">
       <div class="header-inner">
-        <a href="#" class="logo"><LogoIcon /></a>
+        <a href="#" class="logo">
+          <div class="image-wrapper">
+            <img src="@/shared/images/logo.png" alt="logo" />
+          </div>
+        </a>
         <nav>
           <a href="#cost">Стоимость</a>
           <a href="#advantages">О нас</a>
@@ -77,9 +81,14 @@ header {
         width: 122px;
         height: 31px;
       }
-      svg {
+      .image-wrapper {
         width: 100%;
         height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
     nav {
