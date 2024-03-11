@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const handleFocus = (e) => {
+  e.target.value = "+7";
+};
+</script>
 
 <template>
   <label class="input-wrapper">
@@ -6,6 +10,7 @@
       <img src="@/shared/images/country-icon.png" alt="country" />
     </div>
     <input
+      @focus="handleFocus"
       type="text"
       placeholder="Ваш телефон"
       v-mask="'+7 (###) ###-##-##'"
