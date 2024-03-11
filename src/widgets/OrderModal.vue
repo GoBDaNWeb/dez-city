@@ -21,10 +21,10 @@ watch(
 <template>
   <div
     class="order-modal"
-    @click="modal.handleOpenModal(false)"
+    @click="modal.handleOpenModal"
     :class="modal.isActive ? 'active' : ''"
   >
-    <div class="modal-content" @click="modal.handleOpenModal(true)">
+    <div class="modal-content" @click.stop>
       <button @click="modal.handleOpenModal" class="close-btn">
         <CloseIcon />
       </button>

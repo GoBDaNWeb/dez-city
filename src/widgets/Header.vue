@@ -75,8 +75,8 @@ header {
       padding: 10px;
     }
     .logo {
-      width: 162px;
-      height: 42px;
+      width: 175px;
+      height: 50px;
       @media (max-width: $tab) {
         width: 122px;
         height: 31px;

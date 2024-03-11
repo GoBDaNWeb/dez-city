@@ -9,11 +9,7 @@ export const useModalStore = defineStore("modal", {
   // state: () => ({ count: 0 })
   actions: {
     handleOpenModal(type) {
-      if (type) {
-        this.isActive = type;
-      } else {
-        this.isActive = !this.isActive;
-      }
+      this.isActive = !this.isActive;
     },
   },
 });
