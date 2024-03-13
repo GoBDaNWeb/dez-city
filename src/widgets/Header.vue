@@ -26,7 +26,7 @@ const menu = useMenuStore();
             <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
           </div>
           <div class="info-item">
-            <p>Выезд по Москве и МО (до ЦКАД)</p>
+            <p>Выезд по Москве и МО</p>
             <span>
               Большая Семёновская ул., <br />
               д 40, стр. 13</span
