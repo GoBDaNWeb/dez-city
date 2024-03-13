@@ -71,6 +71,7 @@ defineProps(["title", "text", "img"]);
       margin-top: 10px;
       width: auto;
       height: auto;
+      max-height: 350px;
     }
     img {
       width: 70%;

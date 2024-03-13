@@ -1,7 +1,7 @@
 <script setup>
 import { Badge, Button } from "@/shared/ui";
 import { useModalStore } from "@/entities";
-defineProps(["title", "options", "badges"]);
+defineProps(["title", "options"]);
 
 const modal = useModalStore();
 </script>
@@ -9,10 +9,7 @@ const modal = useModalStore();
 <template>
   <div class="cost-item">
     <h4>{{ title }}</h4>
-    <span>Способ</span>
-    <div class="badges">
-      <Badge v-for="badge in badges" :key="badge">{{ badge }}</Badge>
-    </div>
+
     <ul>
       <li v-for="option in options" :key="option.title">
         <p>{{ option.title }}</p>

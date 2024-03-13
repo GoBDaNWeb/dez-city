@@ -6,7 +6,6 @@ const costItems = [
   {
     id: 1,
     title: "Уничтожение тараканов",
-    badges: ["Холодный туман", "Горячий туман"],
     options: [
       { title: "Общежитие / комната (до 20 м²)", cost: "от 1900 ₽" },
       { title: "1-комнатная квартира (до 40 м²) ", cost: "от 2300 ₽" },
@@ -19,7 +18,6 @@ const costItems = [
   {
     id: 2,
     title: "Уничтожение  клопов",
-    badges: ["Холодный туман", "Горячий туман"],
     options: [
       { title: "Общежитие / комната (до 20 м²)", cost: "от 1900 ₽" },
       { title: "1-комнатная квартира (до 40 м²) ", cost: "от 2300 ₽" },
@@ -32,7 +30,6 @@ const costItems = [
   {
     id: 3,
     title: "Уничтожение плесени",
-    badges: ["Холодный туман"],
     options: [
       { title: "1-5 м²", cost: "от 400 ₽/ м²" },
       { title: "5-10 м² ", cost: "от 350 руб./ м²" },
@@ -52,7 +49,6 @@ const costItems = [
           v-for="item in costItems"
           :key="item.id"
           :title="item.title"
-          :badges="item.badges"
           :options="item.options"
         />
       </div>
