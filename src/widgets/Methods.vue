@@ -1,7 +1,7 @@
 <script setup>
 import { MethodItem } from "@/entities";
 import img1 from "@/shared/images/methods/1.png";
-import img2 from "@/shared/images/methods/2.jpeg";
+import img2 from "@/shared/images/methods/2.jpg";
 const methodList = [
   {
     id: 1,

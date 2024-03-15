@@ -20,13 +20,13 @@
             <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
           </li>
         </ul>
-        <!-- <div class="info">
+        <div class="info">
           <ul>
-            <li>ИП <span>Малышева Наталья Анатольевна</span></li>
-            <li>ИНН: <span>602712947306</span></li>
-            <li>ОГРНИП: <span> 320602700000042</span></li>
+            <li>ИП <span>Виноградова Елена Санановна</span></li>
+            <li>ИНН: <span>081602311454</span></li>
+            <li>ОГРНИП: <span>319081600008384</span></li>
           </ul>
-        </div> -->
+        </div>
       </div>
       <div class="footer-item">
         <div class="footer-about">
@@ -91,10 +91,8 @@ footer {
       ul {
         display: flex;
         gap: 70px;
-        margin-top: 65px;
         @media (max-width: $tab) {
           gap: 20px;
-          margin-top: 0;
           flex-direction: column;
           padding-left: 10px;
         }
