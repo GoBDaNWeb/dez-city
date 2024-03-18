@@ -1,14 +1,19 @@
 <script setup>
 import { Button, Input } from "@/shared/ui";
+import { useModalStore } from "@/entities";
 
 defineProps(["btnColor", "btnText", "text"]);
+
+const modal = useModalStore();
 </script>
 
 <template>
-  <form>
+  <form @submit.prevent>
     <div class="inputs">
       <Input />
-      <Button :color="btnColor">{{ btnText }}</Button>
+      <Button :click="modal.handleOpenSuccessModal" :color="btnColor">{{
+        btnText
+      }}</Button>
     </div>
     <p>
       {{ text }}

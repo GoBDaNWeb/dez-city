@@ -16,6 +16,11 @@ watch(
     }
   }
 );
+
+const success = () => {
+  modal.handleOpenModal();
+  modal.handleOpenSuccessModal();
+};
 </script>
 
 <template>
@@ -32,14 +37,14 @@ watch(
         Заказать <br />
         обработку
       </h3>
-      <form>
+      <form @submit.prevent>
         <input type="text" placeholder="Ваше имя" />
         <Input />
         <p>
           Нажимая на кнопку, Вы соглашаетесь
           <a href="#">с политикой конфиденциальности</a>
         </p>
-        <Button color="black">Заказать</Button>
+        <Button :click="success" color="black">Заказать</Button>
       </form>
     </div>
   </div>

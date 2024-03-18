@@ -14,6 +14,7 @@ import Gallery from "./Gallery.vue";
 import Footer from "./Footer.vue";
 import MobileMenu from "./MobileMenu.vue";
 import OrderModal from "./OrderModal.vue";
+import SuccessModal from "./SuccessModal.vue";
 
 export {
   Header,
@@ -32,4 +33,5 @@ export {
   Footer,
   MobileMenu,
   OrderModal,
+  SuccessModal,
 };
