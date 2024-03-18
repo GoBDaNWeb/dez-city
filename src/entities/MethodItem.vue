@@ -66,17 +66,26 @@ defineProps(["title", "text", "img"]);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding-bottom: 85%;
     @media (max-width: $tab) {
       border-radius: 20px;
       margin-top: 10px;
       width: auto;
       height: auto;
       max-height: 350px;
+      padding-bottom: 50%;
     }
     img {
+      position: absolute;
       width: 70%;
       height: 70%;
       object-fit: contain;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
   }
 }
