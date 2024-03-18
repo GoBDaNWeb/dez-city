@@ -59,13 +59,8 @@ defineProps(["title", "text", "img"]);
     }
   }
   .image-wrapper {
-    width: 100%;
-    height: 100%;
     background: var(--white-color);
     border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     padding-bottom: 85%;
     @media (max-width: $tab) {

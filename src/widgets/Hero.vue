@@ -179,7 +179,6 @@ import { Form } from "@/features";
     .right {
       width: 100%;
       height: 100%;
-      aspect-ratio: 1;
       @media (max-width: $desktop-sm) {
         height: auto;
       }
