@@ -18,7 +18,7 @@ const modal = useModalStore();
     <p>
       {{ text }}
 
-      <a href="#">с политикой конфиденциальности</a>
+      <a href="/policy.pdf" target="_blank"> с политикой конфиденциальности </a>
     </p>
   </form>
 </template>
