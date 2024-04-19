@@ -74,14 +74,15 @@ header {
     display: flex;
     @media (max-width: $tab) {
       padding: 10px;
+      gap: 10px;
     }
     .logo {
       width: 167px;
       height: 52px;
       padding-left: 20px;
       @media (max-width: $tab) {
-        width: 91px;
-        height: 44px;
+        width: 111px;
+        height: 49px;
         display: flex;
         align-items: center;
         padding-left: 0;
