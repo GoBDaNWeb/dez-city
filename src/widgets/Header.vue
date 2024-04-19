@@ -80,10 +80,11 @@ header {
       height: 52px;
       padding-left: 20px;
       @media (max-width: $tab) {
-        width: 116px;
+        width: 91px;
         height: 44px;
         display: flex;
         align-items: center;
+        padding-left: 0;
       }
       .image-wrapper {
         width: 100%;
@@ -149,11 +150,14 @@ header {
       }
     }
     .mob-tel {
-      font-size: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: var(--orange-color);
       font-family: "Cygre ", sans-serif;
       display: flex;
       align-items: center;
+      font-weight: 600;
+
       svg {
         width: 100%;
         height: 100%;
