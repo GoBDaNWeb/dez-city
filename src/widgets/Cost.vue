@@ -29,6 +29,28 @@ const costItems = [
   },
   {
     id: 3,
+    title: "Уничтожение  крыс",
+    options: [
+      { title: "Помещение и площадь - до 100 м²", cost: "от 1090 руб." },
+      { title: "Помещение и площадь - 100 м² - 200 м²", cost: "40 руб/м" },
+      { title: "Помещение и площадь - 200 м² - 300 м²", cost: "35 руб/м" },
+      { title: "Помещение и площадь - 300 м² - 400 м²", cost: "30 руб/м" },
+      { title: "Помещение и площадь - свыше 500 м²", cost: "договорная" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Уничтожение клещей",
+    options: [
+      { title: "Площадь (соток) - до 10", cost: "от 490 руб сотка" },
+      { title: "Площадь (соток) - 11-25", cost: "от 390 руб./сотка" },
+      { title: "Площадь (соток) - 26-50", cost: "от 290 руб./сотка" },
+      { title: "Площадь (соток) - 50 и более", cost: "от 190 руб./сотка" },
+    ],
+  },
+
+  {
+    id: 5,
     title: "Уничтожение плесени",
     options: [
       { title: "1-5 м²", cost: "от 400 ₽/ м²" },
@@ -52,17 +74,6 @@ const costItems = [
           :options="item.options"
         />
       </div>
-
-      <!-- <Swiper
-        :breakpoints="{
-          0: { slidesPerView: 1 },
-          767: { slidesPerView: 2 },
-          1280: { slidesPerView: 3 },
-        }"
-        slidesPerView="3"
-      >
-        <SwiperSlide> </SwiperSlide>
-      </Swiper> -->
     </div>
   </div>
 </template>

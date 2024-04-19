@@ -39,7 +39,8 @@ const menu = useMenuStore();
         </div>
         <div class="mob">
           <a class="mob-tel" href="tel:+7 (495) 183-22-95">
-            <PhoneIcon />
+            <!-- <PhoneIcon /> -->
+            +7 (966) 888-06-52
           </a>
           <button
             @click="menu.handleOpenMenu"
@@ -79,12 +80,17 @@ header {
       height: 52px;
       padding-left: 20px;
       @media (max-width: $tab) {
-        width: 146px;
+        width: 116px;
         height: 44px;
+        display: flex;
+        align-items: center;
       }
       .image-wrapper {
         width: 100%;
         height: 100%;
+        @media (max-width: $tab) {
+          height: 75%;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -143,8 +149,11 @@ header {
       }
     }
     .mob-tel {
-      width: 34px;
-      height: 34px;
+      font-size: 12px;
+      color: var(--orange-color);
+      font-family: "Cygre ", sans-serif;
+      display: flex;
+      align-items: center;
       svg {
         width: 100%;
         height: 100%;

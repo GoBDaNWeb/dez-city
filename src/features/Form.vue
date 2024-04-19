@@ -1,19 +1,42 @@
 <script setup>
+import { ref } from "vue";
 import { Button, Input } from "@/shared/ui";
 import { useModalStore } from "@/entities";
 
 defineProps(["btnColor", "btnText", "text"]);
 
 const modal = useModalStore();
+const modelValue = ref("");
+
+const submitForm = async () => {
+  try {
+    const response = await fetch("submit.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ phone: modelValue.value }),
+    });
+    console.log(response);
+    if (!response.ok) {
+      throw new Error("Network response was not ok", response);
+    }
+  } catch (error) {
+    console.error("Ошибка:", error);
+  }
+};
 </script>
 
 <template>
-  <form @submit.prevent>
+  <form @submit.prevent="submitForm">
     <div class="inputs">
-      <Input />
-      <Button :click="modal.handleOpenSuccessModal" :color="btnColor">{{
-        btnText
-      }}</Button>
+      <Input v-model="modelValue" />
+      <Button
+        :disabled="modelValue.length < 10"
+        :click="modal.handleOpenSuccessModal"
+        :color="btnColor"
+        >{{ btnText }}</Button
+      >
     </div>
     <p>
       {{ text }}

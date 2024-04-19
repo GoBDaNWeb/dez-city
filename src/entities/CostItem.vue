@@ -106,6 +106,7 @@ const modal = useModalStore();
         font-size: 16px;
         line-height: 16px;
         color: var(--dark-color);
+        white-space: nowrap;
         @media (max-width: $tab) {
           font-size: 14px;
           line-height: 14px;

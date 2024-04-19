@@ -1,7 +1,8 @@
 <script setup>
-const handleFocus = (e) => {
-  e.target.value = "+7";
-};
+// const handleFocus = (e) => {
+//   e.target.value = "+7";
+// };
+defineEmits(["update:modelValue"]);
 </script>
 
 <template>
@@ -10,10 +11,11 @@ const handleFocus = (e) => {
       <img src="@/shared/images/country-icon.png" alt="country" />
     </div>
     <input
-      @focus="handleFocus"
       type="text"
+      name="phone"
       placeholder="Ваш телефон"
-      v-mask="'+7 (###) ###-##-##'"
+      v-mask="'###########'"
+      @input="$emit('update:modelValue', $event.target.value)"
     />
   </label>
 </template>

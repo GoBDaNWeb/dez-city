@@ -10,8 +10,7 @@ import { Form } from "@/features";
         <h1>
           <span>Уничтожение</span>
           <br />
-          тараканов, клопов <br />
-          и плесени
+          тараканов, клопов, крыс, клещей и плесени
         </h1>
         <p>Гарантия результата по договору <span>на 1 год</span> вперёд</p>
         <ul>
@@ -80,12 +79,12 @@ import { Form } from "@/features";
         font-family: "Cygre ", sans-serif;
         font-weight: 600;
         font-size: 54px;
-        line-height: 48px;
+        line-height: 54px;
         margin-bottom: 30px;
         text-transform: uppercase;
         @media (max-width: $tab) {
           font-size: 36px;
-          line-height: 32px;
+          line-height: 36px;
           margin-bottom: 20px;
         }
         span {

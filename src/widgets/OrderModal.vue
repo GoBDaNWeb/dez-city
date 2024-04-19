@@ -1,10 +1,12 @@
 <script setup>
 import { CloseIcon } from "@/shared/icons";
 import { Input, Button } from "@/shared/ui";
-import { watch } from "vue";
+import { watch, ref } from "vue";
 import { useModalStore } from "@/entities";
 
 const modal = useModalStore();
+const modelValue = ref("");
+const nameValue = ref("");
 
 watch(
   () => modal.isActive,
@@ -16,6 +18,24 @@ watch(
     }
   }
 );
+
+const submitForm = async () => {
+  try {
+    const response = await fetch("submit.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ phone: modelValue.value, name: nameValue.value }),
+    });
+    console.log(response);
+    if (!response.ok) {
+      throw new Error("Network response was not ok", response);
+    }
+  } catch (error) {
+    console.error("Ошибка:", error);
+  }
+};
 
 const success = () => {
   modal.handleOpenModal();
@@ -37,14 +57,19 @@ const success = () => {
         Заказать <br />
         обработку
       </h3>
-      <form @submit.prevent>
-        <input type="text" placeholder="Ваше имя" />
-        <Input />
+      <form @submit.prevent="submitForm">
+        <input v-model="nameValue" type="text" placeholder="Ваше имя" />
+        <Input v-model="modelValue" />
         <p>
           Нажимая на кнопку, Вы соглашаетесь
           <a href="#">с политикой конфиденциальности</a>
         </p>
-        <Button :click="success" color="black">Заказать</Button>
+        <Button
+          :disabled="modelValue.length < 10 || nameValue.length === 0"
+          :click="success"
+          color="black"
+          >Заказать</Button
+        >
       </form>
     </div>
   </div>
