@@ -26,10 +26,10 @@ const menu = useMenuStore();
             <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
           </div>
           <div class="info-item">
-            <p>Выезд по Москве и МО</p>
+            <p>Выезд по Твери</p>
             <span>
-              Большая Семёновская ул., <br />
-              д 40, стр. 13</span
+              Старицкое шоссе, <br />
+              д. 15, г. Тверь</span
             >
           </div>
           <div class="info-item">
@@ -38,7 +38,7 @@ const menu = useMenuStore();
           </div>
         </div>
         <div class="mob">
-          <a class="mob-tel" href="tel:+7 (495) 183-22-95">
+          <a class="mob-tel" href="tel:+7 (966) 888-06-52">
             <!-- <PhoneIcon /> -->
             +7 (966) 888-06-52
           </a>

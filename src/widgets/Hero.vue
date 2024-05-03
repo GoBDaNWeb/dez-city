@@ -21,7 +21,7 @@ import { Form } from "@/features";
             средства
           </li>
         </ul>
-        <h4>Работаем по Москве и Московской области</h4>
+        <h4>Работаем по Твери</h4>
         <Form
           btnColor="orange"
           btnText="Заказать обработку"

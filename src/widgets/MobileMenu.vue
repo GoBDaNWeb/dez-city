@@ -19,8 +19,8 @@ const menu = useMenuStore();
           <a href="mailto:sesonedez@yandex.ru">sesonedez@yandex.ru</a>
         </li>
         <li>
-          <p>Выезд по Москве и +50км за МКАД</p>
-          <span>Москва, Большая Семёновская ул., д 40, стр. 13</span>
+          <p>Выезд по Твери</p>
+          <span>Старицкое шоссе, д. 15, г. Тверь</span>
         </li>
         <li>
           <p>Ежедневно с 8:00 до 24:00</p>
